@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>08-表单.html</title>
+    </head>
+    <body>
+        <!--
+            表单：表单标签  提示信息  表单域
+            label标签：标题
+                for属性：关键表单标签的id属性
+            =================================================================
+            input标签：
+                type属性：
+            text:输入框
+            radio：单选
+                属性：
+                name：组的概念，让几个单选形成单选的效果，其相同的名称
+                checked：默认选中  写法：checked="checked"  checked=""  checked
+            button：普通按钮
+                属性：
+                value：按钮文本
+            checkbox：复选框
+                属性：
+                checked：默认选中  写法：checked="checked"  checked=""  checked
+            =================================================================
+            select:下拉框
+            optgroup:下拉组
+                属性：
+                label：组标题
+            option：下挂项
+                属性：
+                selected：默认选中  写法：selected="selected"  selected=""  selected
+            =================================================================
+            textarea：文本域
+            =================================================================
+            form：表单域 想要提交的标签包含
+            属性：
+                action：提交地址
+                method：提交方式 post/get
+            button：
+            属性：
+                type:submit（默认）/reset（重置）/button（普通）
+
+        -->
+        <form action="https://baidu.com" method="post">
+            <label for="txt1">姓名：</label><input type="text" id="txt1"><br/><br/>
+            <label for="txt2">密码：</label><input type="password" id="txt2"><br/><br/>
+            性别：
+            <input type="radio" name="gender">男
+            <input type="radio" name="gender" checked="checked">女<br/><br/>
+            学历：
+            <input type="radio" name="education">博士
+            <input type="radio" name="education">硕士
+            <input type="radio"
+                   name="education"
+                   checked="checked">本科<br/><br/>
+            兴趣爱好：
+            <input type="checkbox">思考人生<input type="checkbox">think life<br><br>
+            区域：
+            <select>
+                <optgroup label="亚洲">
+                    <option>中国</option>
+                    <option>韩国</option>
+                    <option>日本</option>
+                </optgroup>
+                <optgroup label="北美洲">
+                    <option>美国</option>
+                    <option>加拿大</option>
+                </optgroup>
+                <optgroup label="欧洲">
+                    <option>英国</option>
+                    <option>法国</option>
+                    <option>意大利</option>
+                </optgroup>
+            </select><br><br>
+            自我描述：<br><br>
+            <textarea></textarea><br><br>
+            <input type="button" value="普通">
+            <button type="button">common</button>
+            <input type="submit" value="提交">
+            <button type="submit">submit</button>
+            <input type="reset" value="重置">
+            <button type="reset">reset</button>
+        </form>
+
+    </body>
+</html>
