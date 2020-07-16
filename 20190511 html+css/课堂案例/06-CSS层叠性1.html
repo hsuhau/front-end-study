@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>06-CSS层叠性1.html</title>
+        <style type="text/css">
+            /*
+                CSS层叠性：再给标签设置不同的属性时，都可以实现，设置相同属性，权重大的起作用，当权重相同时，实现后定义的
+                权重：
+                标签选择器 < 类选择器 < id选择器 < 行内样式 < !important
+                1             10         100     1000      无穷大
+            */
+
+            .yellow {
+                color: yellow;
+            }
+
+            div {
+                color: red !important;
+            }
+
+            div {
+                font-size: 40px;
+            }
+
+            div {
+                font-weight: 700;
+            }
+
+            div {
+                color: blue;
+            }
+
+            .gray{
+                color: gray;
+            }
+
+            #pink{
+                color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="gray yellow " id="pink" style="color: gold">我是一个盒子</div>
+    </body>
+</html>

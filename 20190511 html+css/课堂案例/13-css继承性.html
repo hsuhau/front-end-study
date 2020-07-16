@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>13-css继承性.html</title>
+        <style type="text/css">
+
+            /*
+                CSS继承性
+                后代标签会继承父辈标签的所有关于文本的属性，后代标签会优先继承离他最近的父辈元素的属性，一层一层向外，集成的权重是0.
+
+                能够继承的属性是
+                所有文本属性，text-align:center，行高line-
+             */
+            .box {
+                width: 400px;
+                font-family: "宋体";
+                font-weight: 700;
+                color: red !important;
+                font-size: 40px;
+                text-align: center;
+                background: plum;
+            }
+
+            span {
+                color: blue;
+            }
+
+            .s1{
+                color: gold;
+            }
+
+            p{
+                width: 20px;
+                background: grey;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <span class="s1">我是一个盒子</span>
+            <p>段落<i>倾斜</i></p>
+        </div>
+
+    </body>
+</html>

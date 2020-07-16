@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>05-CSS三种书写位置.html</title>
+        <!--
+            第一种：内嵌式
+            将CSS样式写在网页中，和HTML代码是相对分离，
+            代码耦合度相对较低，比较善于维护，在讲知识点中使用，在项目中偶尔会用到
+        -->
+
+        <!--<style type="text/css">
+            div {
+                color: #1B6FEF;
+            }
+        </style>-->
+
+        <!--
+            第三种：外链式
+            单独创建一个css文件，在html文件中用link进行关联，代码是绝对分离，
+            代码耦合度极低，善于维护，在工作中，使用此方式开发
+        -->
+        <link rel="stylesheet" type="text/css" href="css/one.css"/>
+    </head>
+    <body>
+        <!--
+            第二种：行内式
+            将CSS样式写在网页的标签中，和HTML代码参杂在一起，
+            代码耦合度很高，代码冗余高，难以维护，在布局时不推荐使用，偶尔有它的优势
+        -->
+<!--        <div style="width: 100px;height: 100px;color: #FFD669;background: #009A57">我是盒子</div>-->
+
+        <div>我是div</div>
+    </body>
+</html>

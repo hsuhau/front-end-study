@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>11-后代选择器.html</title>
+        <style type="text/css">
+            <!--
+                后代选择器：将几种选择器结合使用，选择器之间用空格表示后代，后代指的是子子孙孙
+            -->
+
+            /*
+                CSS层叠性：再给标签设置不同的属性时，都可以实现，设置相同属性，权重大的起作用，当权重相同时，实现后定义的
+                权重：
+                标签选择器 < 类选择器 < id选择器 < 行内样式 < !important
+                1             10         100     1000      无穷大
+            */
+
+            /*h3 {*/
+            /*    color: greenyellow;*/
+            /*}*/
+
+            .hs h3 {
+                color: lightseagreen;
+            }
+
+            /*.hs h3 i{
+                color: plum;
+            }*/
+
+            .hs i {
+                color: plum;
+            }
+
+            .hs h2 .xr {
+                color: gold;
+            }
+
+            .hs .xr {
+                color: gold;
+            }
+
+            .sh h3 {
+                color: burlywood;
+            }
+
+            .hs .hz {
+                color: rebeccapurple;
+            }
+
+            .sh h3 i {
+                color: green;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="hs">
+            <h1>h1</h1>
+            <h2 class="xr">gold</h2>
+            <i>plum</i>
+            <h3 class="hz">h3</h3>
+            <h3>h3</h3>
+            <h3><i>plum</i></h3>
+            <h3 class="xr">gold</h3>
+        </div>
+        <br>
+
+        <div class="sh">
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <h3><i>green</i></h3>
+            <h3>h3</h3>
+            <h3>h3</h3>
+        </div>
+    </body>
+</html>

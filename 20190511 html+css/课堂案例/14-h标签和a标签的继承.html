@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>14-h标签和a标签的继承.html</title>
+        <style type="text/css">
+            .box {
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            a {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            html标签都会有一些默认的css样式，如果是关于文本继承的属性就被自身的设置层叠掉。
+            如果想改变，再给标签人为地设置就OK了
+        -->
+        <div class="box">
+            <span>我是span</span>
+            <h1>我是标题</h1>
+            <h2>我是标题2</h2>
+            <a href="##">超链接</a>
+        </div>
+    </body>
+</html>

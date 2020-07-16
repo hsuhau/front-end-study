@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>02-类选择器.html</title>
+        <style type="text/css">
+            /*标签选择器*/
+            h1 {
+                color: greenyellow;
+            }
+
+            /*类选择器*/
+            /*定义类名*/
+            .stu1 {
+                color: plum;
+            }
+
+            .stu2 {
+                color: peru;
+            }
+
+            /*
+                定义类名：用.开头，后面是类名称
+                调用类名：在标签中用class属性调用类名，不加.
+                命名规范：定义类名时，不能用数组开头，可以是字母+数字+中划线+下划线
+                建议用驼峰命名法
+            */
+        </style>
+    </head>
+    <body class="stu1">
+        <h1 class="stu1">0001学员</h1>
+        <h1 class="stu2">0002学员</h1>
+        <h1>0003学员</h1>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>07-CSS层叠性2.html</title>
+        <!--link相当于是一个桥梁，相当于是一个style标签-->
+        <link rel="stylesheet" type="text/css" href="css/two.css"/>
+
+        <!--<style type="text/css">
+            div {
+                color: blue;
+            }
+        </style>-->
+        <style type="text/css">
+            /*
+                CSS层叠性：再给标签设置不同的属性时，都可以实现，设置相同属性，权重大的起作用，当权重相同时，实现后定义的
+                权重：
+                标签选择器 < 类选择器 < id选择器 < 行内样式 < !important
+            */
+            div {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pink">我是一个盒子</div>
+    </body>
+</html>
